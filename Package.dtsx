@@ -1,0 +1,3298 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="12/27/2024 11:27:23 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="VIGSK97"
+  DTS:CreatorName="VIGSK97\vigne"
+  DTS:DTSID="{6F837FE2-5CFF-402A-B3DB-B120DCB7EF85}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5685.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="89"
+  DTS:VersionGUID="{34AD4A92-67A4-4D15-8079-52B04C732F61}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{8D38497C-34BA-4FCE-B651-3C13D5E5D40F}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\vigne\Downloads\archive (19)\Finance_data.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="gender"
+              DTS:DTSID="{88F13E68-22B9-4211-8EFC-79281F1B6C36}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="age"
+              DTS:DTSID="{A058C141-EA5B-4486-9B91-5E6CC8CA6989}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Investment_Avenues"
+              DTS:DTSID="{77E2E8B1-8AAE-47E6-BB2D-B34F3F8194A7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Mutual_Funds"
+              DTS:DTSID="{B79EE5DC-D2EA-4B85-8010-B79BA82E82B6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Equity_Market"
+              DTS:DTSID="{DC09BD2F-2C86-4995-965F-4BE4B901CDAB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Debentures"
+              DTS:DTSID="{1D25C06C-A0A8-459D-A872-F13957A91F3A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Government_Bonds"
+              DTS:DTSID="{559212B1-4091-4BA8-BCE5-0BB57C329C5F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Fixed_Deposits"
+              DTS:DTSID="{E29B99BA-497D-4BD7-8748-F2F2E456F73C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PPF"
+              DTS:DTSID="{5745DDB0-6462-4A4A-A051-DD4659A4F89D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Gold"
+              DTS:DTSID="{0C124D8D-54BA-4AAD-B753-5127AFBA840A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Stock_Marktet"
+              DTS:DTSID="{EED653EF-3478-4FBA-B44D-7029389B8EF4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Factor"
+              DTS:DTSID="{422A1680-D072-448E-9D89-FCEFF6FC2D0C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Objective"
+              DTS:DTSID="{82A5ED75-7757-4AA6-879C-9CE54417101C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Purpose"
+              DTS:DTSID="{FFD5B4F1-ABE3-4A05-ABB9-FB6631558124}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Duration"
+              DTS:DTSID="{B2FE94D6-6980-4503-8E14-185C5356D14F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Invest_Monitor"
+              DTS:DTSID="{995C5C54-A8D7-4271-8926-C3B92B87A3E5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Expect"
+              DTS:DTSID="{A98B52B1-9B80-43D6-96DE-8F5168593BB6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Avenue"
+              DTS:DTSID="{624700CC-0029-4B48-890F-C6DBFDFF6B10}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="What are your savings objectives?"
+              DTS:DTSID="{6E3B39F5-8ADB-4B8E-9EF0-5A45458EA431}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Reason_Equity"
+              DTS:DTSID="{D8A6F9CF-4146-4122-9B33-BE59B7ED86EA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Reason_Mutual"
+              DTS:DTSID="{01995E0B-CDFD-4EC5-A806-48179EFC22AC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Reason_Bonds"
+              DTS:DTSID="{4D393AFA-5586-4233-BF45-F34910E88258}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Reason_FD"
+              DTS:DTSID="{CB6382E5-D0BD-45EC-92D3-283F83973BF7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Source"
+              DTS:DTSID="{0EC50350-208F-479B-8B62-B16F21C92416}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[VIGSK97.FinanceDB]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{BCCE335B-788B-47A1-8B0A-A0D851E6285C}"
+      DTS:ObjectName="VIGSK97.FinanceDB">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=VIGSK97;Initial Catalog=FinanceDB;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{BCCE335B-788B-47A1-8B0A-A0D851E6285C}VIGSK97.FinanceDB;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Integraion"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{F4222955-8706-4C31-9A63-4D51014FDF5E}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Integraion"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Integraion\Data Conversion"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Data Integraion\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Integraion\Data Conversion.Inputs[Data Conversion Input].Columns[gender]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="gender"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[gender]" />
+                    <inputColumn
+                      refId="Package\Data Integraion\Data Conversion.Inputs[Data Conversion Input].Columns[age]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="age"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[age]" />
+                    <inputColumn
+                      refId="Package\Data Integraion\Data Conversion.Inputs[Data Conversion Input].Columns[Investment_Avenues]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Investment_Avenues"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Investment_Avenues]" />
+                    <inputColumn
+                      refId="Package\Data Integraion\Data Conversion.Inputs[Data Conversion Input].Columns[Mutual_Funds]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Mutual_Funds"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Mutual_Funds]" />
+                    <inputColumn
+                      refId="Package\Data Integraion\Data Conversion.Inputs[Data Conversion Input].Columns[Equity_Market]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Equity_Market"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Equity_Market]" />
+                    <inputColumn
+                      refId="Package\Data Integraion\Data Conversion.Inputs[Data Conversion Input].Columns[Debentures]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Debentures"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Debentures]" />
+                    <inputColumn
+                      refId="Package\Data Integraion\Data Conversion.Inputs[Data Conversion Input].Columns[Government_Bonds]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Government_Bonds"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Government_Bonds]" />
+                    <inputColumn
+                      refId="Package\Data Integraion\Data Conversion.Inputs[Data Conversion Input].Columns[Fixed_Deposits]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Fixed_Deposits"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Fixed_Deposits]" />
+                    <inputColumn
+                      refId="Package\Data Integraion\Data Conversion.Inputs[Data Conversion Input].Columns[PPF]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="PPF"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[PPF]" />
+                    <inputColumn
+                      refId="Package\Data Integraion\Data Conversion.Inputs[Data Conversion Input].Columns[Gold]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Gold"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Gold]" />
+                    <inputColumn
+                      refId="Package\Data Integraion\Data Conversion.Inputs[Data Conversion Input].Columns[Stock_Marktet]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Stock_Marktet"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Stock_Marktet]" />
+                    <inputColumn
+                      refId="Package\Data Integraion\Data Conversion.Inputs[Data Conversion Input].Columns[Factor]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Factor"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Factor]" />
+                    <inputColumn
+                      refId="Package\Data Integraion\Data Conversion.Inputs[Data Conversion Input].Columns[Objective]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Objective"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Objective]" />
+                    <inputColumn
+                      refId="Package\Data Integraion\Data Conversion.Inputs[Data Conversion Input].Columns[Purpose]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Purpose"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Purpose]" />
+                    <inputColumn
+                      refId="Package\Data Integraion\Data Conversion.Inputs[Data Conversion Input].Columns[Duration]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Duration"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Duration]" />
+                    <inputColumn
+                      refId="Package\Data Integraion\Data Conversion.Inputs[Data Conversion Input].Columns[Invest_Monitor]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Invest_Monitor"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Invest_Monitor]" />
+                    <inputColumn
+                      refId="Package\Data Integraion\Data Conversion.Inputs[Data Conversion Input].Columns[Expect]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Expect"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Expect]" />
+                    <inputColumn
+                      refId="Package\Data Integraion\Data Conversion.Inputs[Data Conversion Input].Columns[Avenue]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Avenue"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Avenue]" />
+                    <inputColumn
+                      refId="Package\Data Integraion\Data Conversion.Inputs[Data Conversion Input].Columns[What are your savings objectives?]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="What are your savings objectives?"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[What are your savings objectives?]" />
+                    <inputColumn
+                      refId="Package\Data Integraion\Data Conversion.Inputs[Data Conversion Input].Columns[Reason_Equity]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Reason_Equity"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Reason_Equity]" />
+                    <inputColumn
+                      refId="Package\Data Integraion\Data Conversion.Inputs[Data Conversion Input].Columns[Reason_Mutual]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Reason_Mutual"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Reason_Mutual]" />
+                    <inputColumn
+                      refId="Package\Data Integraion\Data Conversion.Inputs[Data Conversion Input].Columns[Reason_Bonds]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Reason_Bonds"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Reason_Bonds]" />
+                    <inputColumn
+                      refId="Package\Data Integraion\Data Conversion.Inputs[Data Conversion Input].Columns[Reason_FD]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Reason_FD"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Reason_FD]" />
+                    <inputColumn
+                      refId="Package\Data Integraion\Data Conversion.Inputs[Data Conversion Input].Columns[Source]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Source"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Source]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\Data Integraion\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of gender]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of gender]"
+                      name="Copy of gender"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[gender]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of age]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of age]"
+                      name="Copy of age"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[age]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Investment_Avenues]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Investment_Avenues]"
+                      name="Copy of Investment_Avenues"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Investment_Avenues]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Mutual_Funds]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Mutual_Funds]"
+                      name="Copy of Mutual_Funds"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Mutual_Funds]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Equity_Market]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Equity_Market]"
+                      name="Copy of Equity_Market"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Equity_Market]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Debentures]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Debentures]"
+                      name="Copy of Debentures"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Debentures]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Government_Bonds]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Government_Bonds]"
+                      name="Copy of Government_Bonds"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Government_Bonds]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Fixed_Deposits]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Fixed_Deposits]"
+                      name="Copy of Fixed_Deposits"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Fixed_Deposits]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of PPF]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of PPF]"
+                      name="Copy of PPF"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[PPF]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Gold]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Gold]"
+                      name="Copy of Gold"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Gold]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Stock_Marktet]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Stock_Marktet]"
+                      name="Copy of Stock_Marktet"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Stock_Marktet]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Factor]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Factor]"
+                      name="Copy of Factor"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Factor]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Objective]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Objective]"
+                      name="Copy of Objective"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Objective]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Purpose]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Purpose]"
+                      name="Copy of Purpose"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Purpose]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Duration]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Duration]"
+                      name="Copy of Duration"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Duration]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Invest_Monitor]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Invest_Monitor]"
+                      name="Copy of Invest_Monitor"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Invest_Monitor]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Expect]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Expect]"
+                      name="Copy of Expect"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Expect]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Avenue]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Avenue]"
+                      name="Copy of Avenue"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Avenue]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of What are your savings objectives?]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of What are your savings objectives?]"
+                      name="Copy of What are your savings objectives?"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[What are your savings objectives?]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Reason_Equity]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Reason_Equity]"
+                      name="Copy of Reason_Equity"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Reason_Equity]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Reason_Mutual]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Reason_Mutual]"
+                      name="Copy of Reason_Mutual"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Reason_Mutual]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Reason_Bonds]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Reason_Bonds]"
+                      name="Copy of Reason_Bonds"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Reason_Bonds]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Reason_FD]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Reason_FD]"
+                      name="Copy of Reason_FD"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Reason_FD]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Source]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Source]"
+                      name="Copy of Source"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Source]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\Data Integraion\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Integraion\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Integraion\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[gender]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[gender]"
+                      length="50"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[gender]"
+                      name="gender"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[age]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[age]"
+                      length="50"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[age]"
+                      name="age"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Investment_Avenues]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Investment_Avenues]"
+                      length="50"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Investment_Avenues]"
+                      name="Investment_Avenues"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Mutual_Funds]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Mutual_Funds]"
+                      length="50"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Mutual_Funds]"
+                      name="Mutual_Funds"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Equity_Market]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Equity_Market]"
+                      length="50"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Equity_Market]"
+                      name="Equity_Market"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Debentures]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Debentures]"
+                      length="50"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Debentures]"
+                      name="Debentures"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Government_Bonds]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Government_Bonds]"
+                      length="50"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Government_Bonds]"
+                      name="Government_Bonds"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Fixed_Deposits]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Fixed_Deposits]"
+                      length="50"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Fixed_Deposits]"
+                      name="Fixed_Deposits"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[PPF]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PPF]"
+                      length="50"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[PPF]"
+                      name="PPF"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Gold]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Gold]"
+                      length="50"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Gold]"
+                      name="Gold"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Stock_Marktet]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Stock_Marktet]"
+                      length="50"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Stock_Marktet]"
+                      name="Stock_Marktet"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Factor]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Factor]"
+                      length="50"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Factor]"
+                      name="Factor"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Objective]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Objective]"
+                      length="50"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Objective]"
+                      name="Objective"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Purpose]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Purpose]"
+                      length="50"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Purpose]"
+                      name="Purpose"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Duration]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Duration]"
+                      length="50"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Duration]"
+                      name="Duration"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Invest_Monitor]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Invest_Monitor]"
+                      length="50"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Invest_Monitor]"
+                      name="Invest_Monitor"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Expect]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Expect]"
+                      length="50"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Expect]"
+                      name="Expect"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Avenue]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Avenue]"
+                      length="50"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Avenue]"
+                      name="Avenue"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[What are your savings objectives?]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[What are your savings objectives?]"
+                      length="50"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[What are your savings objectives?]"
+                      name="What are your savings objectives?"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Reason_Equity]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Reason_Equity]"
+                      length="50"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Reason_Equity]"
+                      name="Reason_Equity"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Reason_Mutual]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Reason_Mutual]"
+                      length="50"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Reason_Mutual]"
+                      name="Reason_Mutual"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Reason_Bonds]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Reason_Bonds]"
+                      length="50"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Reason_Bonds]"
+                      name="Reason_Bonds"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Reason_FD]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Reason_FD]"
+                      length="50"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Reason_FD]"
+                      name="Reason_FD"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Source]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Source]"
+                      length="50"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].Columns[Source]"
+                      name="Source"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[gender]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="gender" />
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[age]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="age" />
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Investment_Avenues]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Investment_Avenues" />
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Mutual_Funds]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Mutual_Funds" />
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Equity_Market]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Equity_Market" />
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Debentures]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Debentures" />
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Government_Bonds]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Government_Bonds" />
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Fixed_Deposits]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Fixed_Deposits" />
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PPF]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="PPF" />
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Gold]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Gold" />
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Stock_Marktet]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Stock_Marktet" />
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Factor]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Factor" />
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Objective]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Objective" />
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Purpose]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Purpose" />
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Duration]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Duration" />
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Invest_Monitor]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Invest_Monitor" />
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Expect]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Expect" />
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Avenue]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Avenue" />
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[What are your savings objectives?]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="What are your savings objectives?" />
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Reason_Equity]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Reason_Equity" />
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Reason_Mutual]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Reason_Mutual" />
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Reason_Bonds]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Reason_Bonds" />
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Reason_FD]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Reason_FD" />
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Source]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Source" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                    <outputColumn
+                      refId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Integraion\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[FinanceData]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Integraion\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[VIGSK97.FinanceDB]"
+                  connectionManagerRefId="Package.ConnectionManagers[VIGSK97.FinanceDB]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of gender]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Copy of gender"
+                      externalMetadataColumnId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Gender]"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of gender]" />
+                    <inputColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of age]"
+                      cachedDataType="i4"
+                      cachedName="Copy of age"
+                      externalMetadataColumnId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Age]"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of age]" />
+                    <inputColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Investment_Avenues]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Copy of Investment_Avenues"
+                      externalMetadataColumnId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Investment_Avenues]"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Investment_Avenues]" />
+                    <inputColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Mutual_Funds]"
+                      cachedDataType="i4"
+                      cachedName="Copy of Mutual_Funds"
+                      externalMetadataColumnId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Mutual_Funds]"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Mutual_Funds]" />
+                    <inputColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Equity_Market]"
+                      cachedDataType="i4"
+                      cachedName="Copy of Equity_Market"
+                      externalMetadataColumnId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Equity_Market]"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Equity_Market]" />
+                    <inputColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Debentures]"
+                      cachedDataType="i4"
+                      cachedName="Copy of Debentures"
+                      externalMetadataColumnId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Debentures]"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Debentures]" />
+                    <inputColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Government_Bonds]"
+                      cachedDataType="i4"
+                      cachedName="Copy of Government_Bonds"
+                      externalMetadataColumnId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Government_Bonds]"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Government_Bonds]" />
+                    <inputColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Fixed_Deposits]"
+                      cachedDataType="i4"
+                      cachedName="Copy of Fixed_Deposits"
+                      externalMetadataColumnId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Fixed_Deposits]"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Fixed_Deposits]" />
+                    <inputColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of PPF]"
+                      cachedDataType="i4"
+                      cachedName="Copy of PPF"
+                      externalMetadataColumnId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PPF]"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of PPF]" />
+                    <inputColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Gold]"
+                      cachedDataType="i4"
+                      cachedName="Copy of Gold"
+                      externalMetadataColumnId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Gold]"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Gold]" />
+                    <inputColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Stock_Marktet]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Copy of Stock_Marktet"
+                      externalMetadataColumnId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Stock_Market]"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Stock_Marktet]" />
+                    <inputColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Factor]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Copy of Factor"
+                      externalMetadataColumnId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Factor]"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Factor]" />
+                    <inputColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Objective]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Copy of Objective"
+                      externalMetadataColumnId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Objective]"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Objective]" />
+                    <inputColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Purpose]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Copy of Purpose"
+                      externalMetadataColumnId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Purpose]"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Purpose]" />
+                    <inputColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Duration]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Copy of Duration"
+                      externalMetadataColumnId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Duration]"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Duration]" />
+                    <inputColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Invest_Monitor]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Copy of Invest_Monitor"
+                      externalMetadataColumnId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Invest_Monitor]"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Invest_Monitor]" />
+                    <inputColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Expect]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Copy of Expect"
+                      externalMetadataColumnId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Expect]"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Expect]" />
+                    <inputColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Avenue]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Copy of Avenue"
+                      externalMetadataColumnId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Avenue]"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Avenue]" />
+                    <inputColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of What are your savings objectives?]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Copy of What are your savings objectives?"
+                      externalMetadataColumnId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Savings_Objectives]"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of What are your savings objectives?]" />
+                    <inputColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Reason_Equity]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Copy of Reason_Equity"
+                      externalMetadataColumnId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Reason_Equity]"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Reason_Equity]" />
+                    <inputColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Reason_Mutual]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Copy of Reason_Mutual"
+                      externalMetadataColumnId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Reason_Mutual]"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Reason_Mutual]" />
+                    <inputColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Reason_Bonds]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Copy of Reason_Bonds"
+                      externalMetadataColumnId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Reason_Bonds]"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Reason_Bonds]" />
+                    <inputColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Reason_FD]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Copy of Reason_FD"
+                      externalMetadataColumnId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Reason_FD]"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Reason_FD]" />
+                    <inputColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Source]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Copy of Source"
+                      externalMetadataColumnId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Source]"
+                      lineageId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Source]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Gender]"
+                      dataType="wstr"
+                      length="50"
+                      name="Gender" />
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Age]"
+                      dataType="i4"
+                      name="Age" />
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Investment_Avenues]"
+                      dataType="wstr"
+                      length="50"
+                      name="Investment_Avenues" />
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Mutual_Funds]"
+                      dataType="i4"
+                      name="Mutual_Funds" />
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Equity_Market]"
+                      dataType="i4"
+                      name="Equity_Market" />
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Debentures]"
+                      dataType="i4"
+                      name="Debentures" />
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Government_Bonds]"
+                      dataType="i4"
+                      name="Government_Bonds" />
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Fixed_Deposits]"
+                      dataType="i4"
+                      name="Fixed_Deposits" />
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PPF]"
+                      dataType="i4"
+                      name="PPF" />
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Gold]"
+                      dataType="i4"
+                      name="Gold" />
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Stock_Market]"
+                      dataType="wstr"
+                      length="50"
+                      name="Stock_Market" />
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Factor]"
+                      dataType="wstr"
+                      length="50"
+                      name="Factor" />
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Objective]"
+                      dataType="wstr"
+                      length="50"
+                      name="Objective" />
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Purpose]"
+                      dataType="wstr"
+                      length="50"
+                      name="Purpose" />
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Duration]"
+                      dataType="wstr"
+                      length="50"
+                      name="Duration" />
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Invest_Monitor]"
+                      dataType="wstr"
+                      length="20"
+                      name="Invest_Monitor" />
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Expect]"
+                      dataType="wstr"
+                      length="20"
+                      name="Expect" />
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Avenue]"
+                      dataType="wstr"
+                      length="50"
+                      name="Avenue" />
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Savings_Objectives]"
+                      dataType="wstr"
+                      length="100"
+                      name="Savings_Objectives" />
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Reason_Equity]"
+                      dataType="wstr"
+                      length="100"
+                      name="Reason_Equity" />
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Reason_Mutual]"
+                      dataType="wstr"
+                      length="100"
+                      name="Reason_Mutual" />
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Reason_Bonds]"
+                      dataType="wstr"
+                      length="100"
+                      name="Reason_Bonds" />
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Reason_FD]"
+                      dataType="wstr"
+                      length="100"
+                      name="Reason_FD" />
+                    <externalMetadataColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Source]"
+                      dataType="wstr"
+                      length="100"
+                      name="Source" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Integraion\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Integraion\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Integraion\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Integraion\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Integraion.Paths[Data Conversion Output]"
+              endId="Package\Data Integraion\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Data Conversion Output"
+              startId="Package\Data Integraion\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Data Integraion.Paths[Flat File Source Output]"
+              endId="Package\Data Integraion\Data Conversion.Inputs[Data Conversion Input]"
+              name="Flat File Source Output"
+              startId="Package\Data Integraion\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Data Prep"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{A05EDEA5-7812-4DD5-9D02-3C65CF150D20}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Prep"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{BCCE335B-788B-47A1-8B0A-A0D851E6285C}"
+          SQLTask:SqlStatementSource="TRUNCATE TABLE FinanceData;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Data Segmentation"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{C13A9E66-4896-4763-9B20-F3B132FD172B}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Segmentation"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Segmentation\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Data Segmentation\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Segmentation\Derived Column.Inputs[Derived Column Input].Columns[age]"
+                      cachedDataType="i4"
+                      cachedName="age"
+                      lineageId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].Columns[age]" />
+                    <inputColumn
+                      refId="Package\Data Segmentation\Derived Column.Inputs[Derived Column Input].Columns[Mutual_Funds]"
+                      cachedDataType="i4"
+                      cachedName="Mutual_Funds"
+                      lineageId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].Columns[Mutual_Funds]" />
+                    <inputColumn
+                      refId="Package\Data Segmentation\Derived Column.Inputs[Derived Column Input].Columns[Equity_Market]"
+                      cachedDataType="i4"
+                      cachedName="Equity_Market"
+                      lineageId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].Columns[Equity_Market]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Segmentation\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Data Segmentation\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Segmentation\Derived Column.Outputs[Derived Column Output].Columns[AgeGroup]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="17"
+                      lineageId="Package\Data Segmentation\Derived Column.Outputs[Derived Column Output].Columns[AgeGroup]"
+                      name="AgeGroup"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">#{Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].Columns[age]} &lt; 25 ? "Young Investors" : (#{Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].Columns[age]} &lt;= 40 ? "Mid-Age Investors" : "Senior Investors")</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">age &lt; 25 ? "Young Investors" : (age &lt;= 40 ? "Mid-Age Investors" : "Senior Investors")</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Segmentation\Derived Column.Outputs[Derived Column Output].Columns[InvestmentTypeSegment]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="23"
+                      lineageId="Package\Data Segmentation\Derived Column.Outputs[Derived Column Output].Columns[InvestmentTypeSegment]"
+                      name="InvestmentTypeSegment"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">#{Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].Columns[Mutual_Funds]} &gt; 3 ? "Mutual Funds Enthusiast" : (#{Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].Columns[Equity_Market]} &gt; 3 ? "Equity Market Focused" : "Diversified Investor")</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">Mutual_Funds &gt; 3 ? "Mutual Funds Enthusiast" : (Equity_Market &gt; 3 ? "Equity Market Focused" : "Diversified Investor")</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Segmentation\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Data Segmentation\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Segmentation\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Segmentation\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Segmentation\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Segmentation\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Segmentation\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[SegmentedFinanceData]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Segmentation\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[VIGSK97.FinanceDB]"
+                  connectionManagerRefId="Package.ConnectionManagers[VIGSK97.FinanceDB]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Segmentation\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Segmentation\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[gender]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="gender"
+                      externalMetadataColumnId="Package\Data Segmentation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Gender]"
+                      lineageId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].Columns[gender]" />
+                    <inputColumn
+                      refId="Package\Data Segmentation\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[age]"
+                      cachedDataType="i4"
+                      cachedName="age"
+                      externalMetadataColumnId="Package\Data Segmentation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Age]"
+                      lineageId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].Columns[age]" />
+                    <inputColumn
+                      refId="Package\Data Segmentation\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Savings_Objectives]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="Savings_Objectives"
+                      externalMetadataColumnId="Package\Data Segmentation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Savings_Objectives]"
+                      lineageId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].Columns[Savings_Objectives]" />
+                    <inputColumn
+                      refId="Package\Data Segmentation\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[AgeGroup]"
+                      cachedDataType="wstr"
+                      cachedLength="17"
+                      cachedName="AgeGroup"
+                      externalMetadataColumnId="Package\Data Segmentation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AgeGroup]"
+                      lineageId="Package\Data Segmentation\Derived Column.Outputs[Derived Column Output].Columns[AgeGroup]" />
+                    <inputColumn
+                      refId="Package\Data Segmentation\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[InvestmentTypeSegment]"
+                      cachedDataType="wstr"
+                      cachedLength="23"
+                      cachedName="InvestmentTypeSegment"
+                      externalMetadataColumnId="Package\Data Segmentation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[InvestmentType]"
+                      lineageId="Package\Data Segmentation\Derived Column.Outputs[Derived Column Output].Columns[InvestmentTypeSegment]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Segmentation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Gender]"
+                      dataType="wstr"
+                      length="10"
+                      name="Gender" />
+                    <externalMetadataColumn
+                      refId="Package\Data Segmentation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Age]"
+                      dataType="i4"
+                      name="Age" />
+                    <externalMetadataColumn
+                      refId="Package\Data Segmentation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AgeGroup]"
+                      dataType="wstr"
+                      length="50"
+                      name="AgeGroup" />
+                    <externalMetadataColumn
+                      refId="Package\Data Segmentation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Savings_Objectives]"
+                      dataType="wstr"
+                      length="100"
+                      name="Savings_Objectives" />
+                    <externalMetadataColumn
+                      refId="Package\Data Segmentation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CreatedDate]"
+                      dataType="dbTimeStamp"
+                      name="CreatedDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Segmentation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[InvestmentType]"
+                      dataType="wstr"
+                      length="50"
+                      name="InvestmentType" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Segmentation\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Data Segmentation\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Segmentation\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Segmentation\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Segmentation\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Segmentation\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Segmentation\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[FinanceData]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT gender, age, Mutual_Funds, Equity_Market, Debentures, 
+       Government_Bonds, Fixed_Deposits, PPF, Gold, Duration, Savings_Objectives 
+FROM FinanceData;</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Segmentation\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[VIGSK97.FinanceDB]"
+                  connectionManagerRefId="Package.ConnectionManagers[VIGSK97.FinanceDB]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].Columns[Mutual_Funds]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Mutual_Funds]"
+                      lineageId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].Columns[Mutual_Funds]"
+                      name="Mutual_Funds"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].Columns[Equity_Market]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Equity_Market]"
+                      lineageId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].Columns[Equity_Market]"
+                      name="Equity_Market"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].Columns[Debentures]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Debentures]"
+                      lineageId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].Columns[Debentures]"
+                      name="Debentures"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].Columns[Government_Bonds]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Government_Bonds]"
+                      lineageId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].Columns[Government_Bonds]"
+                      name="Government_Bonds"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].Columns[Fixed_Deposits]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Fixed_Deposits]"
+                      lineageId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].Columns[Fixed_Deposits]"
+                      name="Fixed_Deposits"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].Columns[PPF]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[PPF]"
+                      lineageId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].Columns[PPF]"
+                      name="PPF"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].Columns[Gold]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Gold]"
+                      lineageId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].Columns[Gold]"
+                      name="Gold"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].Columns[Duration]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Duration]"
+                      length="50"
+                      lineageId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].Columns[Duration]"
+                      name="Duration"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].Columns[gender]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[gender]"
+                      length="50"
+                      lineageId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].Columns[gender]"
+                      name="gender"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].Columns[age]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[age]"
+                      lineageId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].Columns[age]"
+                      name="age"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].Columns[Savings_Objectives]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Savings_Objectives]"
+                      length="100"
+                      lineageId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].Columns[Savings_Objectives]"
+                      name="Savings_Objectives"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Mutual_Funds]"
+                      dataType="i4"
+                      name="Mutual_Funds" />
+                    <externalMetadataColumn
+                      refId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Equity_Market]"
+                      dataType="i4"
+                      name="Equity_Market" />
+                    <externalMetadataColumn
+                      refId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Debentures]"
+                      dataType="i4"
+                      name="Debentures" />
+                    <externalMetadataColumn
+                      refId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Government_Bonds]"
+                      dataType="i4"
+                      name="Government_Bonds" />
+                    <externalMetadataColumn
+                      refId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Fixed_Deposits]"
+                      dataType="i4"
+                      name="Fixed_Deposits" />
+                    <externalMetadataColumn
+                      refId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[PPF]"
+                      dataType="i4"
+                      name="PPF" />
+                    <externalMetadataColumn
+                      refId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Gold]"
+                      dataType="i4"
+                      name="Gold" />
+                    <externalMetadataColumn
+                      refId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Duration]"
+                      dataType="wstr"
+                      length="50"
+                      name="Duration" />
+                    <externalMetadataColumn
+                      refId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[gender]"
+                      dataType="wstr"
+                      length="50"
+                      name="gender" />
+                    <externalMetadataColumn
+                      refId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[age]"
+                      dataType="i4"
+                      name="age" />
+                    <externalMetadataColumn
+                      refId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Savings_Objectives]"
+                      dataType="wstr"
+                      length="100"
+                      name="Savings_Objectives" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[gender]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[gender]"
+                      name="gender" />
+                    <outputColumn
+                      refId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[age]"
+                      dataType="i4"
+                      lineageId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[age]"
+                      name="age" />
+                    <outputColumn
+                      refId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Mutual_Funds]"
+                      dataType="i4"
+                      lineageId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Mutual_Funds]"
+                      name="Mutual_Funds" />
+                    <outputColumn
+                      refId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Equity_Market]"
+                      dataType="i4"
+                      lineageId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Equity_Market]"
+                      name="Equity_Market" />
+                    <outputColumn
+                      refId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Debentures]"
+                      dataType="i4"
+                      lineageId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Debentures]"
+                      name="Debentures" />
+                    <outputColumn
+                      refId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Government_Bonds]"
+                      dataType="i4"
+                      lineageId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Government_Bonds]"
+                      name="Government_Bonds" />
+                    <outputColumn
+                      refId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Fixed_Deposits]"
+                      dataType="i4"
+                      lineageId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Fixed_Deposits]"
+                      name="Fixed_Deposits" />
+                    <outputColumn
+                      refId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PPF]"
+                      dataType="i4"
+                      lineageId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PPF]"
+                      name="PPF" />
+                    <outputColumn
+                      refId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Gold]"
+                      dataType="i4"
+                      lineageId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Gold]"
+                      name="Gold" />
+                    <outputColumn
+                      refId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Duration]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Duration]"
+                      name="Duration" />
+                    <outputColumn
+                      refId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Savings_Objectives]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Savings_Objectives]"
+                      name="Savings_Objectives" />
+                    <outputColumn
+                      refId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Segmentation.Paths[Derived Column Output]"
+              endId="Package\Data Segmentation\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Derived Column Output"
+              startId="Package\Data Segmentation\Derived Column.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Data Segmentation.Paths[OLE DB Source Output]"
+              endId="Package\Data Segmentation\Derived Column.Inputs[Derived Column Input]"
+              name="OLE DB Source Output"
+              startId="Package\Data Segmentation\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Data Summary"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{ECE2B3ED-6F84-48D7-8685-0529E5563665}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Summary"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{BCCE335B-788B-47A1-8B0A-A0D851E6285C}"
+          SQLTask:SqlStatementSource="SELECT        AgeGroup, InvestmentType, Savings_Objectives, SuggestedInvestments, COUNT(AgeGroup) AS RecommendationCount&#xA;INTO              RecommendationSummary&#xA;FROM            InvestmentRecommendations&#xA;GROUP BY AgeGroup, Savings_Objectives, SuggestedInvestments, InvestmentType" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Insights Generation"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{1418EFAA-B1B8-4E17-8A5E-A79B863C54FA}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Insights Generation"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{BCCE335B-788B-47A1-8B0A-A0D851E6285C}"
+          SQLTask:SqlStatementSource="SELECT        Reason_Equity, COUNT(Reason_Equity) AS Count&#xA;INTO              ReasonEquitySummary&#xA;FROM            FinanceData&#xA;GROUP BY Reason_Equity" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Recommendations"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{655F0705-3B90-46D6-B8DA-EE8AF3921429}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Recommendations"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{BCCE335B-788B-47A1-8B0A-A0D851E6285C}"
+          SQLTask:SqlStatementSource="WITH RecommendationCTE AS (SELECT        AgeGroup, InvestmentType, Savings_Objectives, &#xA;                                                                                              CASE WHEN Savings_Objectives = 'Retirement Plan' THEN 'Fixed Deposits, Bonds' WHEN Savings_Objectives = 'Health' THEN CASE WHEN AgeGroup = 'Young Investors' THEN 'Mutual Funds, Equity'&#xA;                                                                                               ELSE 'Mutual Funds, Gold' END ELSE 'Equity Market, Gold' END AS SuggestedInvestments&#xA;                                                                     FROM            SegmentedFinanceData)&#xA;    SELECT        AgeGroup, InvestmentType, Savings_Objectives, SuggestedInvestments, GETDATE() AS CreatedDate&#xA;     INTO               InvestmentRecommendations&#xA;     FROM            RecommendationCTE AS RecommendationCTE_1" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{B53437A1-5EE5-415C-8CCA-06C11DBD2C85}"
+      DTS:From="Package\Data Integraion"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Data Segmentation" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{7D7A54B9-2210-4766-96AC-23E0EE9CAF11}"
+      DTS:From="Package\Data Prep"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Data Integraion" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{A4050636-212D-4A23-9ED4-91525996046E}"
+      DTS:From="Package\Data Segmentation"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\Recommendations" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{20CB492D-3C83-4AD3-9CC9-E4555E368F13}"
+      DTS:From="Package\Insights Generation"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\Recommendations" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{E8FCDDF5-DCF7-44F3-BDBA-89F707CB89F0}"
+      DTS:From="Package\Data Segmentation"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4"
+      DTS:To="Package\Insights Generation" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
+      DTS:CreationName=""
+      DTS:DTSID="{87DC6BE7-1A54-42BB-BADC-3B7192B52A0A}"
+      DTS:From="Package\Recommendations"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 5"
+      DTS:To="Package\Data Summary" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Data Integraion"
+          TopLeft="171.5,35.5" />
+        <NodeLayout
+          Size="128,42"
+          Id="Package\Data Prep"
+          TopLeft="18,100" />
+        <NodeLayout
+          Size="173,42"
+          Id="Package\Data Segmentation"
+          TopLeft="518,70" />
+        <NodeLayout
+          Size="152,42"
+          Id="Package\Data Summary"
+          TopLeft="267,288" />
+        <NodeLayout
+          Size="174,42"
+          Id="Package\Insights Generation"
+          TopLeft="735,230" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Recommendations"
+          TopLeft="497,213" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="325.5,56.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="192.5,34.5"
+              Start="0,0"
+              End="185,34.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="92.25,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="92.25,0"
+                    Point2="96.25,0"
+                    Point3="96.25,4" />
+                  <mssgle:LineSegment
+                    End="96.25,30.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="96.25,30.5"
+                    Point2="96.25,34.5"
+                    Point3="100.25,34.5" />
+                  <mssgle:LineSegment
+                    End="185,34.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="146,121">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="25.5,-64.5"
+              Start="0,0"
+              End="18,-64.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="8.75,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="8.75,0"
+                    Point2="12.75,0"
+                    Point3="12.75,-4" />
+                  <mssgle:LineSegment
+                    End="12.75,-60.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="12.75,-60.5"
+                    Point2="12.75,-64.5"
+                    Point3="16.75,-64.5" />
+                  <mssgle:LineSegment
+                    End="18,-64.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="579.75,112">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,101"
+              Start="0,0"
+              End="0,93.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,93.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="735,251">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-67,-17"
+              Start="0,0"
+              End="-59.5,-17">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-29.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-29.5,0"
+                    Point2="-33.5,0"
+                    Point3="-33.5,-4" />
+                  <mssgle:LineSegment
+                    End="-33.5,-13" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-33.5,-13"
+                    Point2="-33.5,-17"
+                    Point3="-37.5,-17" />
+                  <mssgle:LineSegment
+                    End="-59.5,-17" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="632,112">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="190,118"
+              Start="0,0"
+              End="190,110.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,43.8487972508591" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,43.8487972508591"
+                    Point2="0,47.8487972508591"
+                    Point3="4,47.8487972508591" />
+                  <mssgle:LineSegment
+                    End="186,47.8487972508591" />
+                  <mssgle:CubicBezierSegment
+                    Point1="186,47.8487972508591"
+                    Point2="190,47.8487972508591"
+                    Point3="190,51.8487972508591" />
+                  <mssgle:LineSegment
+                    End="190,110.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 5]"
+          TopLeft="582.5,255">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-243.5,33"
+              Start="0,0"
+              End="-243.5,25.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,12.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,12.5"
+                    Point2="0,16.5"
+                    Point3="-4,16.5" />
+                  <mssgle:LineSegment
+                    End="-239.5,16.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-239.5,16.5"
+                    Point2="-243.5,16.5"
+                    Point3="-243.5,20.5" />
+                  <mssgle:LineSegment
+                    End="-243.5,25.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Data Integraion">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="156,42"
+          Id="Package\Data Integraion\Flat File Source"
+          TopLeft="339,255" />
+        <NodeLayout
+          Size="161,42"
+          Id="Package\Data Integraion\Data Conversion"
+          TopLeft="251,373" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Data Integraion\OLE DB Destination"
+          TopLeft="468,358" />
+        <EdgeLayout
+          Id="Package\Data Integraion.Paths[Flat File Source Output]"
+          TopLeft="417,297">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-85.5,76"
+              Start="0,0"
+              End="-85.5,68.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,34"
+                    Point2="0,38"
+                    Point3="-4,38" />
+                  <mssgle:LineSegment
+                    End="-81.5,38" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-81.5,38"
+                    Point2="-85.5,38"
+                    Point3="-85.5,42" />
+                  <mssgle:LineSegment
+                    End="-85.5,68.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Integraion.Paths[Data Conversion Output]"
+          TopLeft="412,394">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="56,-15"
+              Start="0,0"
+              End="48.5,-15">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="24,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="24,0"
+                    Point2="28,0"
+                    Point3="28,-4" />
+                  <mssgle:LineSegment
+                    End="28,-11" />
+                  <mssgle:CubicBezierSegment
+                    Point1="28,-11"
+                    Point2="28,-15"
+                    Point3="32,-15" />
+                  <mssgle:LineSegment
+                    End="48.5,-15" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Integraion\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Data Segmentation">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Data Segmentation\OLE DB Source"
+          TopLeft="286,138" />
+        <NodeLayout
+          Size="158,42"
+          Id="Package\Data Segmentation\Derived Column"
+          TopLeft="502,243" />
+        <EdgeLayout
+          Id="Package\Data Segmentation.Paths[OLE DB Source Output]"
+          TopLeft="364.5,180">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="216.5,63"
+              Start="0,0"
+              End="216.5,55.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,27.5"
+                    Point2="0,31.5"
+                    Point3="4,31.5" />
+                  <mssgle:LineSegment
+                    End="212.5,31.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="212.5,31.5"
+                    Point2="216.5,31.5"
+                    Point3="216.5,35.5" />
+                  <mssgle:LineSegment
+                    End="216.5,55.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Data Segmentation\OLE DB Destination"
+          TopLeft="558,340" />
+        <EdgeLayout
+          Id="Package\Data Segmentation.Paths[Derived Column Output]"
+          TopLeft="581,285">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="65.5,55"
+              Start="0,0"
+              End="65.5,47.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.5"
+                    Point2="0,27.5"
+                    Point3="4,27.5" />
+                  <mssgle:LineSegment
+                    End="61.5,27.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="61.5,27.5"
+                    Point2="65.5,27.5"
+                    Point3="65.5,31.5" />
+                  <mssgle:LineSegment
+                    End="65.5,47.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Segmentation\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Segmentation\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
